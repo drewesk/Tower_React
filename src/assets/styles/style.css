@@ -16,3 +16,22 @@
   padding-top: 5%;
   font-weight: bold;
 }
+
+
+#mordor {
+  width: 80%;
+  border-style: groove;
+  border-width: thick;
+  margin-top: 2rem;
+  margin-left: 3rem;
+   margin-bottom: 2rem;
+}
+
+#location-description {
+  margin-top: 10rem;
+  font-size: 18px;
+}
+
+.location-container {
+  background-color: #34BCE0;
+}
