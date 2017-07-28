@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
+import Moment from 'react-moment';
 
 export class Menu extends Component {
   constructor(props) {
     super();
 
     this.state = {
-
+      dateTimestamp: Date.now
     }
   }
 
@@ -16,7 +17,7 @@ export class Menu extends Component {
           <div className="card-group">
               { this.props.menuItems.map((item, i) => {
                 return (
-                  <div className="populate-items-container container menu-item-width">
+                  <div key={i} className="populate-items-container container menu-item-width">
                     <div className="card add-color center-content">
                       <div className="opacity-reverse">
                       <img className="card-img-top" src={ item.url_image } alt={ item.item_name } height="200" width="200px"/>
@@ -25,7 +26,7 @@ export class Menu extends Component {
                         <p className="card-text">{ item.item_description }</p>
                       </div>
                       <div className="card-footer">
-                        <small className="text-muted">Last updated 3 mins ago</small>
+                        <span><Moment fromNow>{ this.state.dateTimestamp }</Moment></span>
                       </div>
                     </div>
                   </div>

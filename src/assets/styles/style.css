@@ -18,13 +18,15 @@
 
 .center-content {
   text-align: center;
+  margin: 10px;
 }
+
 .flex {
   display: flex;
 }
 
 .menu-item-width {
-  width: 40rem;
+  width: 20rem;
   align-items: center;
 }
 
@@ -39,7 +41,7 @@
 /*by id*/
 #nav {
   background-image: url('../images/theshire.jpg') ;
-  height: 30vw;
+  height: 35vw;
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
