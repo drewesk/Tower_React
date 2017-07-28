@@ -12,8 +12,11 @@ export class Navbar extends Component {
   render() {
     return(
       <div className="navbar-container">
-       <nav id="nav">
-         <h1 id='title'>The Tower Dive Bar</h1>
+       <nav className="" id="nav">
+         <h1 className="position-absolute" id='title'>The Tower Dive Bar</h1>
+         <div className="saramon position-relative">
+           <img src="./assets/images/sauron.png" alt="" height="300px" width="300px"/>
+         </div>
        </nav>
       </div>
     );

@@ -11,13 +11,14 @@ export class Menu extends Component {
 
   render() {
     return(
-      <div className="menu-container">
+      <div className="menu-container flex">
         <div className="populate-items">
           <div className="card-group">
               { this.props.menuItems.map((item, i) => {
                 return (
-                  <div className="populate-items-container">
-                    <div className="card">
+                  <div className="populate-items-container container menu-item-width">
+                    <div className="card add-color center-content">
+                      <div className="opacity-reverse">
                       <img className="card-img-top" src={ item.url_image } alt={ item.item_name } height="200" width="200px"/>
                       <div className="card-block">
                         <h4 className="card-title">{ item.item_name } | ${ item.item_price }</h4>
@@ -27,6 +28,7 @@ export class Menu extends Component {
                         <small className="text-muted">Last updated 3 mins ago</small>
                       </div>
                     </div>
+                  </div>
                 </div>
                   );
               }) }
